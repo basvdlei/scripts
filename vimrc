@@ -58,6 +58,7 @@ set nobackup
 
 fixdel
 set number
+set relativenumber
 set backspace=2
 set whichwrap+=<,>,h,l
 set mouse=a
