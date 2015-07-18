@@ -1,4 +1,5 @@
 set nocompatible
+set noautochdir
 set colorcolumn=80
 set history=1000
 
@@ -9,6 +10,8 @@ syntax on
 
 " Colorscript from: http://www.vim.org/scripts/script.php?script_id=3529
 colorscheme distinguished      
+" Downloaded from: http://www.vim.org/scripts/download_script.php?src_id=23147
+"colorscheme github      
 
 
 """
@@ -23,6 +26,7 @@ Bundle 'gmarik/vundle'
 
 " My bundles here:
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'fatih/vim-go'
 "
 " original repos on GitHub
 Bundle 'tpope/vim-fugitive'
