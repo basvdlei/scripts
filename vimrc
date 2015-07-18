@@ -27,6 +27,7 @@ Bundle 'gmarik/vundle'
 " My bundles here:
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'fatih/vim-go'
+Bundle 'vim-scripts/ZoomWin'
 "
 " original repos on GitHub
 Bundle 'tpope/vim-fugitive'
