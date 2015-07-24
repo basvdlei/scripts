@@ -401,5 +401,7 @@ client.add_signal("unfocus", function(c) c.border_color = beautiful.border_norma
 --
 
 awful.util.spawn_with_shell("xscreensaver -no-splash")
-awful.util.spawn_with_shell("pkill xcfe4-volumed")
+awful.util.spawn_with_shell("pkill xfce4-power-manager")
+awful.util.spawn_with_shell("pkill xfce4-volumed")
+awful.util.spawn_with_shell("xfce4-power-manager")
 awful.util.spawn_with_shell("xfce4-volumed")
