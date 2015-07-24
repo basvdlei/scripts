@@ -37,8 +37,7 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, and wallpapers
--- beautiful.init("/usr/share/awesome/themes/default/theme.lua")
-beautiful.init("/home/bas/.config/awesome/theme.lua")
+beautiful.init(awful.util.getdir("config") .. "/" .. "theme.lua")
 
 -- MyStuff
 --local APW = require("apw/widget")
