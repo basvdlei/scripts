@@ -60,6 +60,7 @@ set nobackup
 " END Vundle magic
 """
 
+let g:go_fmt_command = "goimports"
 
 fixdel
 set number
