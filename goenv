@@ -12,3 +12,7 @@ fi
 if [ -z "`echo $PATH | grep -o "$GOPATH/bin"`" ]; then
 	PATH=$PATH:$GOPATH/bin; export PATH
 fi
+
+if [ -z "`echo $PS1 | grep -o "GOPATH=$GOPATH"`" ]; then
+	PS1="GOPATH=$GOPATH\n$PS1"; export PS1
+fi
