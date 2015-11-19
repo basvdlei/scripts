@@ -354,7 +354,7 @@ awful.rules.rules = {
     { rule = { class = "gimp" },
       properties = { floating = true } },
     { rule = { class = "chrome" },
-      properties = { tag = tags[1][2] } },
+      properties = { tag = tags[2][2] } },
     { rule = { class = "icedove" },
       properties = { tag = tags[1][9] } },
     { rule = { class = "pidgin" },
