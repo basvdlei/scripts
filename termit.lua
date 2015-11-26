@@ -42,10 +42,17 @@ bindKey('Ctrl-t', nil)
 bindKey('CtrlShift-t', openTab)
 bindKey('Ctrl-w', nil)
 bindKey('CtrlShift-w', closeTab)
+bindKey('CtrlShift-j', prevTab)
 bindKey('Ctrl-Page_Up', prevTab)
+bindKey('CtrlShift-k', nextTab)
 bindKey('Ctrl-Page_Down', nextTab)
 bindKey('CtrlShift-/', findDlg)
 bindKey('CtrlShift-m', toggleMenubar)
+bindKey('CtrlShift-y', copy)
+bindKey('CtrlShift-c', copy)
+bindKey('CtrlShift-p', paste)
+bindKey('CtrlShift-v', paste)
+
 
 -- 
 userMenu = {}
