@@ -1,7 +1,6 @@
 #!/bin/sh
 
 GOROOT=/usr/local/go; export GOROOT
-GO15VENDOREXPERIMENT=1; export GO15VENDOREXPERIMENT
 
 if [ -z "`echo $PATH | grep -o "$GOROOT"`" ]; then
 	PATH=$PATH:$GOROOT/bin; export PATH
