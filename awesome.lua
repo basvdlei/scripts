@@ -246,6 +246,9 @@ globalkeys = awful.util.table.join(
     -- Lock screen
     awful.key({ modkey,           }, "l",     function () awful.util.spawn("xscreensaver-command -lock") end),
 
+    -- Switch audio output
+    awful.key({}, "XF86Calculator", function () awful.util.spawn_with_shell("~/bin/pa-swich.sh") end),
+
     --awful.key({ modkey,           }, "l",     function () awful.tag.incmwfact( 0.05)    end),
     --awful.key({ modkey,           }, "h",     function () awful.tag.incmwfact(-0.05)    end),
     awful.key({ modkey, "Shift"   }, "h",     function () awful.tag.incnmaster( 1)      end),
