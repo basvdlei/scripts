@@ -8,41 +8,30 @@ autocmd FileType ruby set re=1 " Ruby syntax really slow with new re engine.
 
 syntax on
 
-" Colorscript from: http://www.vim.org/scripts/script.php?script_id=3529
-colorscheme distinguished      
-" Downloaded from: http://www.vim.org/scripts/download_script.php?src_id=23147
-"colorscheme github      
+" Downloaded from: http://www.vim.org/scripts/download_script.php?src_id=23147 "colorscheme github      
+" http://cocopon.me/app/vim-color-gallery/
+" https://github.com/nanotech/jellybeans.vim/tree/master/colors
+colorscheme jellybeans
 
 
 """
 " Vundle magic
 """
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
 
-" let Vundle manage Vundle
-" required! 
-Bundle 'gmarik/vundle'
-
-" My bundles here:
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'fatih/vim-go'
-Bundle 'vim-scripts/ZoomWin'
-"
-" original repos on GitHub
-Bundle 'tpope/vim-fugitive'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-Bundle 'tpope/vim-rails.git'
-" vim-scripts repos
-Bundle 'L9'
-Bundle 'FuzzyFinder'
-" non-GitHub repos
-Bundle 'git://git.wincent.com/command-t.git'
-" Git repos on your local machine (i.e. when working on your own plugin)
-"Bundle 'file:///Users/gmarik/path/to/plugin'
-" ...
-
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'fatih/vim-go'
+Plugin 'vim-scripts/ZoomWin'
+Plugin 'tpope/vim-fugitive'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+Plugin 'tpope/vim-rails.git'
+Plugin 'L9'
+Plugin 'FuzzyFinder'
+Plugin 'git://git.wincent.com/command-t.git'
+call vundle#end()
 filetype plugin indent on     " required!
 set nobackup
 "
