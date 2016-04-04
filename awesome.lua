@@ -244,7 +244,7 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey, "Shift"   }, "q", awesome.quit),
 
     -- Lock screen
-    awful.key({ modkey,           }, "l",     function () awful.util.spawn("xscreensaver-command -lock") end),
+    awful.key({ modkey,           }, "l",     function () awful.util.spawn("light-locker-command --lock") end),
 
     -- Switch audio output
     awful.key({}, "XF86Calculator", function () awful.util.spawn_with_shell("~/bin/pa-swich.sh") end),
@@ -402,7 +402,7 @@ client.add_signal("unfocus", function(c) c.border_color = beautiful.border_norma
 --
 --
 
-awful.util.spawn_with_shell("xscreensaver -no-splash")
+awful.util.spawn_with_shell("light-locker")
 awful.util.spawn_with_shell("pkill xfce4-power-manager")
 awful.util.spawn_with_shell("pkill xfce4-volumed")
 awful.util.spawn_with_shell("xfce4-power-manager")
