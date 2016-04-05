@@ -7,7 +7,7 @@ if [ -z "`echo $PATH | grep -o "$GOROOT"`" ]; then
 fi
 
 if [ -z "$GOPATH" ]; then
-	GOPATH=`pwd`; export GOPATH
+	GOPATH=$HOME/go; export GOPATH
 fi
 
 if [ -z "`echo $PATH | grep -o "$GOPATH/bin"`" ]; then
