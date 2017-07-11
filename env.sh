@@ -2,7 +2,7 @@
 
 # i'd like some more colors :-)
 if [ $TERM = "xterm" ]; then
-	TERM=xterm-256color
+	TERM=gnome-256color
 	export TERM
 fi
 
@@ -23,3 +23,12 @@ export LIBVIRT_DEFAULT_URI
 
 # start vim in nocp mode
 alias vi=vim
+
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
+fi
+
+GOROOT=/usr/local/go; export GOROOT
+PATH=$PATH:$GOROOT/bin; export PATH
+GOPATH=$HOME/go; export GOPATH
+PATH=$PATH:$GOPATH/bin; export PATH
