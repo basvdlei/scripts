@@ -298,6 +298,9 @@ globalkeys = awful.util.table.join(
         end,
         {description = "go back", group = "client"}),
 
+    -- Lock screen
+    awful.key({ modkey,           }, "l", function () awful.util.spawn("gnome-screensaver-command --lock") end,
+              {description = "lock screen", group = "awesome"}),
     -- Standard program
     awful.key({ modkey,           }, "Return", function () awful.spawn(terminal) end,
               {description = "open a terminal", group = "launcher"}),
@@ -578,3 +581,5 @@ end)
 client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
+--
+awful.util.spawn_with_shell("gnome-screensaver")
